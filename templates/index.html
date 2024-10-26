@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block title %}ADE{% endblock %}
 {% block content %}
-<div class="container">
+<div>
 	<div class="card-group">
-		<div class="card">
+		<div class="card text-right">
 			<div class="card-header">
 				Ongoing class
 			</div>
@@ -14,11 +14,10 @@
 			</div>
 			{% else %}
 			<div class="card-body">
-				<h5 class="card-title">{{ current.name }}</h5>
+				<h5 class="card-title">{{ current.name }} - {{ current.location }}</h5>
 				<p class="card-text">Starting at {{ current.begin.strftime('%d-%m-%Y %H:%M') }} 
 					and finishing at {{ current.end.strftime('%d-%m-%Y %H:%M') }} 
 					({{ current.duration}} long).</p>
-				<p class="card-text">The class is held at {{ current.location }}.</p>
 			</div>
 			{% endif %}
 		</div>
@@ -33,11 +32,10 @@
 			</div>
 			{% else %}
 			<div class="card-body">
-				<h5 class="card-title">{{ next.name }}</h5>
+				<h5 class="card-title">{{ next.name }} - {{ next.location }}</h5>
 				<p class="card-text">Starting at {{ next.begin.strftime('%d-%m-%Y %H:%M') }} 
 					and finishing at {{ next.end.strftime('%d-%m-%Y %H:%M') }} 
 					({{ next.duration}} long).</p>
-				<p class="card-text">The class is held at {{ next.location }}.</p>
 			</div>
 			{% endif %}
 		</div>
