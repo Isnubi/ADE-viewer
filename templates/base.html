@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}{% endblock %}</title>
+		<link rel="stylesheet" href="static/css/import.css">
+	</head>
+	<body>
+		<main class="container">
+			{% block content %}
+			{% endblock %}
+		</main>
+
+		<footer>
+			<div class="text-center">
+				<script src="static/js/bootstrap.bundle.min.js"></script>
+				<p>&copy; 2024 Louis GAMBART | ADE-viewer</p>
+			</div>
+		</footer>
+	</body>
+</html>
