@@ -5,6 +5,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
+RUN apt update && apt install nano vim -y
 
 EXPOSE 5000
 
