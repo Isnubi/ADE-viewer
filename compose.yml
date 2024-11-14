@@ -6,7 +6,7 @@ services:
     ports:
       - 5000:5000
     environment:
-      - ADE_URL=https://planif.esiee.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?resources=2129,3094,3095&projectId=12&calType=ical&nbWeeks=4
+      - ADE_URL=https://ade.example.com
       - TZ=Europe/Paris
       - TIME_DELTA=0
     volumes:
